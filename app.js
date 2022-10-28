@@ -50,7 +50,7 @@ app.post('/' , function(req,res) {
    let post = {
      postTitle:req.body.postTitle,
      postBody:req.body.postBody,
-    link: _.kebabCase(req.body.postTitle)
+     link: _.kebabCase(req.body.postTitle)
    }
    posts.push(post);
    res.redirect('/');
